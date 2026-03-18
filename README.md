@@ -42,8 +42,8 @@ How to Run (Termux / Desktop)
 
     (You may replace 1234 with any available port).
 
-    Open your web browser and visit: localhost:1234
-
+    Open your web browser and visit: localhost:1234 or (your device ipaddress:1234) sample 192.168.x.x:1234 in your other device connected to the same network.
+    
 Customization
 
 The player is built using standard HTML5 and CSS3. If you have experience with web design, you can easily modify the CSS within the index.html file to change the interface, colors, or layout to suit your preference.
