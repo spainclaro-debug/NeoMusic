@@ -1,49 +1,98 @@
-Neomusic player
+# NeoMusic
 
-A lightweight, self-hosted music player designed for Termux and mobile browsers. This player supports offline playback and high-performance local streaming using a Python-based server.
-Installation and Setup
+A neomorphic music player that runs on Termux and features a modern web interface powered by Go.
 
-    Download the Core Files
-    Place the following files into your desired project directory:
+## Overview
 
-        index.html
+NeoMusic is a fast and efficient music player with a modern, neomorphic UI design. This update transitions the server from Python to Go, resulting in significant performance improvements and cleaner code organization. The player now supports PWA (Progressive Web App) features and offline functionality, with a responsive design that works seamlessly on phones, tablets, and desktop browsers.
 
-        sw.js (Service Worker)
+## What's New
 
-        manifest.json
+- **Go Backend**: Server rewritten in Go for faster performance and efficient directory scanning
+- **Dynamic Directory Scanning**: Automatically scans `/storage` directory instead of hardcoded paths
+- **Modern UI**: Completely redesigned interface with a contemporary aesthetic, optimized for all devices
+- **PWA Support**: Install as an app on your device
+- **Offline Support**: Limited offline functionality for the host device
+- **Improved Organization**: Cleaner and more organized file structure
 
-        icon.png
+## Installation
 
-    Prepare Your Music
+### Requirements
+- Termux (Android)
+- Go (Go 1.x or later)
 
-        Create a folder named music in the same directory as your HTML file.
+### Steps
 
-        Note: Ensure the folder name is all lowercase (music).
+1. **Install Go**
+   ```bash
+   pkg install golang
+   ```
 
-        Transfer your local .mp3 files into this folder.
+2. **Download NeoMusic**
+   - Go to the [Releases](../../releases) section
+   - Download `NeoMusic.tar.gz`
 
-        Optimization Tip: If you already have a large music library, it is faster to move the four core files listed above into your existing music folder rather than moving gigabytes of music into a new directory.
+3. **Extract the Archive**
+   ```bash
+   tar -xzvf NeoMusic.tar.gz
+   ```
 
-    File Structure
-    For best results, keep all songs directly inside the music directory. Subfolders within the music directory have not been tested and may not be indexed by the player.
+4. **Build the Application**
+   ```bash
+   go build -o neomusic builder.go
+   ```
+   Or with a custom name:
+   ```bash
+   go build -o [your-preferred-name] builder.go
+   ```
 
-How to Run (Termux / Desktop)
+5. **Run the Application**
+   ```bash
+   ./neomusic
+   ```
+   Or with your custom name:
+   ```bash
+   ./[your-preferred-name]
+   ```
 
-    Open your terminal or Termux app.
+6. **Access the Player**
+   - The server will display the port in your terminal (default: `localhost:1220`)
+   - Open your browser and navigate to the displayed address
+   - The initial startup may take a few seconds depending on your music library size, but is significantly faster than the Python version
 
-    Navigate to your project directory.
+## Features
 
-    Ensure Python is installed.
+- ⏯️ **Playback Control**: Play/Pause, Next, Previous
+- 🔀 **Shuffle Mode**: Randomize playback order
+- 🔁 **Repeat Modes**: Repeat all songs or repeat current song
+- ❤️ **Favorites**: Mark and manage your favorite tracks
+- 🔍 **Search**: Search songs by title or artist
+- ⏱️ **Seek Control**: Drag the progress bar to seek forward or backward
+- 🔊 **Volume Control**: Adjust volume (note: may have limited support on Apple devices due to permissions)
+- 📱 **PWA Support**: Install as an app on your device
+- 📁 **Configurable Path**: Change your music directory path from the UI
+- ⚙️ **Port Configuration**: Customize the server port from the UI
+- 📱 **Responsive Design**: Works perfectly on phones, tablets, and desktop browsers
 
-    Start the local server by running:
-    Bash
+## Configuration
 
-    python -m http.server 1234
+After starting the application, you can configure:
+- **Music Directory Path**: Change from the default `/storage` path
+- **Server Port**: Modify the port if the default `1220` is already in use
 
-    (You may replace 1234 with any available port).
+## Known Limitations
 
-    Open your web browser and visit: localhost:1234 or (your device ipaddress:1234) sample 192.168.x.x:1234 in your other device connected to the same network.
-    
-Customization
+- Volume control may not work on Apple devices due to platform-specific permission restrictions
+- Offline support is limited to the host device only
 
-The player is built using standard HTML5 and CSS3. If you have experience with web design, you can easily modify the CSS within the index.html file to change the interface, colors, or layout to suit your preference.
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
+
+## License
+
+Please see the LICENSE file for more information.
+
+---
+
+Built with ❤️ for music lovers using Go and modern web technologies.
