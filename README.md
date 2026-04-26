@@ -1,16 +1,16 @@
 # NeoMusic
 
-A neomorphic music player that runs on Termux and features a modern web interface powered by Go.
+A modern music player that runs on Termux and features a sleek modern UI powered by Go.
 
 ## Overview
 
-NeoMusic is a fast and efficient music player with a modern, neomorphic UI design. This update transitions the server from Python to Go, resulting in significant performance improvements and cleaner code organization. The player now supports PWA (Progressive Web App) features and offline functionality, with a responsive design that works seamlessly on phones, tablets, and desktop browsers.
+NeoMusic is a fast and efficient music player with a modern, clean UI design. The application combines a powerful Go backend with a contemporary web interface for an exceptional listening experience. This update transitions the design from neomorphic to a modern aesthetic, offering improved usability and visual appeal.
 
 ## What's New
 
+- **Modern UI Design**: Sleek and contemporary interface replacing the previous neomorphic design
 - **Go Backend**: Server rewritten in Go for faster performance and efficient directory scanning
 - **Dynamic Directory Scanning**: Automatically scans `/storage` directory instead of hardcoded paths
-- **Modern UI**: Completely redesigned interface with a contemporary aesthetic, optimized for all devices
 - **PWA Support**: Install as an app on your device
 - **Offline Support**: Limited offline functionality for the host device
 - **Improved Organization**: Cleaner and more organized file structure
