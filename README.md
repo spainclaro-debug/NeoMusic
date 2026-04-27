@@ -23,19 +23,19 @@ NeoMusic is a fast and efficient music player with a modern, clean UI design. Th
 
 ## Features
 
-- ⏯️ **Playback Control**: Play/Pause, Next, Previous
-- 🔀 **Shuffle Mode**: Randomize playback order
-- 🔁 **Repeat Modes**: Repeat all songs or repeat current song
-- 📋 **Playlist Support**: Create, manage, and organize custom playlists
-- ❤️ **Favorites**: Mark and manage your favorite tracks
-- 🔍 **Search**: Search songs by title or artist
-- ⏱️ **Seek Control**: Drag the progress bar to seek forward or backward
-- 🔊 **Volume Control**: Adjust volume (note: may have limited support on Apple devices due to permissions)
-- 🎨 **Color Accent Support**: Customize the app's color theme
-- 📱 **PWA Support**: Install as an app on your device
-- 📁 **Configurable Path**: Change your music directory path from the UI
-- ⚙️ **Port Configuration**: Customize the server port from the UI
-- 📱 **Responsive Design**: Works perfectly on phones, tablets, and desktop browsers
+- **Playback Control**: Play/Pause, Next, Previous
+- **Shuffle Mode**: Randomize playback order
+- **Repeat Modes**: Repeat all songs or repeat current song
+- **Playlist Support**: Create, manage, and organize custom playlists
+- **Favorites**: Mark and manage your favorite tracks
+- **Search**: Search songs by title or artist
+- **Seek Control**: Drag the progress bar to seek forward or backward
+- **Volume Control**: Adjust volume (note: may have limited support on Apple devices due to permissions)
+- **Color Accent Support**: Customize the app's color theme
+- **PWA Support**: Install as an app on your device
+- **Configurable Path**: Change your music directory path from the UI
+- **Port Configuration**: Customize the server port from the UI
+- **Responsive Design**: Works perfectly on phones, tablets, and desktop browsers
 
 ## Configuration
 
@@ -57,5 +57,3 @@ Contributions are welcome! Feel free to fork the repository and submit pull requ
 Please see the LICENSE file for more information.
 
 ---
-
-Built with ❤️ for music lovers using Go and modern web technologies.
