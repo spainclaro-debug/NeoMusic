@@ -4,7 +4,7 @@ A modern music player that runs on Termux and features a sleek modern UI powered
 
 ## Overview
 
-NeoMusic is a fast and efficient music player with a modern, clean UI design. The application combines a powerful Go backend with a contemporary web interface for an exceptional listening experience. This update transitions the design from neomorphic to a modern aesthetic, offering improved usability and visual appeal.
+NeoMusic is a fast and efficient music player with a modern, clean UI design. The application combines a powerful Go backend with a contemporary web interface for an exceptional listening experience.
 
 ## What's New
 
@@ -14,61 +14,24 @@ NeoMusic is a fast and efficient music player with a modern, clean UI design. Th
 - **PWA Support**: Install as an app on your device
 - **Offline Support**: Limited offline functionality for the host device
 - **Improved Organization**: Cleaner and more organized file structure
-
-## Installation
-
-### Requirements
-- Termux (Android)
-- Go (Go 1.x or later)
-
-### Steps
-
-1. **Install Go**
-   ```bash
-   pkg install golang
-   ```
-
-2. **Download NeoMusic**
-   - Go to the [Releases](../../releases) section
-   - Download `NeoMusic.tar.gz`
-
-3. **Extract the Archive**
-   ```bash
-   tar -xzvf NeoMusic.tar.gz
-   ```
-
-4. **Build the Application**
-   ```bash
-   go build -o neomusic builder.go
-   ```
-   Or with a custom name:
-   ```bash
-   go build -o [your-preferred-name] builder.go
-   ```
-
-5. **Run the Application**
-   ```bash
-   ./neomusic
-   ```
-   Or with your custom name:
-   ```bash
-   ./[your-preferred-name]
-   ```
-
-6. **Access the Player**
-   - The server will display the port in your terminal (default: `localhost:1220`)
-   - Open your browser and navigate to the displayed address
-   - The initial startup may take a few seconds depending on your music library size, but is significantly faster than the Python version
+- **New Shuffle and Repeat Button Designs**: Enhanced UI for playback controls
+- **Playlist Support**: Create and manage custom playlists
+- **Color Accent Support**: Customize the app's color theme
+- **Font and Album Size Resizing**: Adjust interface elements to your preference
+- **Install Script**: Automated installation process
+- **Cleaned Up Files**: Removed unnecessary files for a leaner codebase
 
 ## Features
 
 - ⏯️ **Playback Control**: Play/Pause, Next, Previous
 - 🔀 **Shuffle Mode**: Randomize playback order
 - 🔁 **Repeat Modes**: Repeat all songs or repeat current song
+- 📋 **Playlist Support**: Create, manage, and organize custom playlists
 - ❤️ **Favorites**: Mark and manage your favorite tracks
 - 🔍 **Search**: Search songs by title or artist
 - ⏱️ **Seek Control**: Drag the progress bar to seek forward or backward
 - 🔊 **Volume Control**: Adjust volume (note: may have limited support on Apple devices due to permissions)
+- 🎨 **Color Accent Support**: Customize the app's color theme
 - 📱 **PWA Support**: Install as an app on your device
 - 📁 **Configurable Path**: Change your music directory path from the UI
 - ⚙️ **Port Configuration**: Customize the server port from the UI
