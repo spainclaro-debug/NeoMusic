@@ -52,7 +52,7 @@ After starting the application, you can configure:
 - **Music Directory Path**: Change from the default `/storage` path
 - **Server Port**: Modify the port if the default `1220` is already in use
 
-## Known Limitations
+## Tell me
 
 - Volume control may not work on Apple devices due to platform-specific permission restrictions
 - Offline support is limited to the host device only
