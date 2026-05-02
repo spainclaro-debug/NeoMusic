@@ -8,6 +8,14 @@ NeoMusic is a fast and efficient music player with a modern, clean UI design. Th
 
 ## What's New
 
+### Latest Update
+- **Play by Artist**: Browse and play all songs from a specific artist
+- **iOS & Android Background Play**: Fixed background playback on iOS and Android devices
+- **Volume Slider on iOS**: Fixed volume slider control for iOS devices
+- **Album Art on iOS Lockscreen**: Fixed album artwork display on iOS lockscreen
+- **Backend and Server Improvements**: Enhanced server performance and stability
+
+### Previous Updates
 - **Modern UI Design**: Sleek and contemporary interface replacing the previous neomorphic design
 - **Go Backend**: Server rewritten in Go for faster performance and efficient directory scanning
 - **Dynamic Directory Scanning**: Automatically scans `/storage` directory instead of hardcoded paths
@@ -29,6 +37,7 @@ NeoMusic is a fast and efficient music player with a modern, clean UI design. Th
 - **Playlist Support**: Create, manage, and organize custom playlists
 - **Favorites**: Mark and manage your favorite tracks
 - **Search**: Search songs by title or artist
+- **Play by Artist**: Browse and play all tracks from a specific artist
 - **Seek Control**: Drag the progress bar to seek forward or backward
 - **Volume Control**: Adjust volume (note: may have limited support on Apple devices due to permissions)
 - **Color Accent Support**: Customize the app's color theme
